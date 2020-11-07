@@ -1,0 +1,55 @@
+1. Create Board
+2. Join Board
+3. Write message
+4. End Turn
+5. Make action:
+6. Leave Board 
+7 Throw card
+8. Finish Game
+9. Take card from Stack
+
+Rules:
+- max 3 actions per turn
+- max players: 5
+- cards in hand:
+	max 7 at the end of turn
+- add two cards at the beginning of turn
+- 5 cards at hand at the beginning of game
+
+* Pay rent card with double card as one 
+* 
+
+
+------------------------------------------------
+
+1. get Card from Stack
+2. Throw card 
+3. end turn
+
+State:
+	- Players
+	- ActivePlayer
+	- Board
+	
+State:
+	Players
+		Hand Cards
+		Board Cards
+	Board
+		Common Cards 
+	Stack
+		List<Card>
+	ActivePlayer
+
+
+Scenario:
+
+	1. JoinBoard 4 Players
+	2. Take one card from Stack
+	3. Throw one card on board
+	4. End turn
+	5. Next player
+	6. LeaveBoard
+	
+ 
+	
