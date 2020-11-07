@@ -1,7 +1,7 @@
 const webSocketsServerPort = 8000;
 const webSocketServer = require('websocket').server;
 const http = require('http');
-const { eventType } = require('./EventHandlers/eventTypes');
+import eventType from './EventHandlers/eventTypes';
 const { connection } = require('websocket');
 // Spinning the http server and the websocket server.
 const server = http.createServer();
@@ -37,7 +37,7 @@ wsServer.on('request', function(request) {
     const parsedMessage = JSON.parse(message.utf8Data);
     if(parsedMessage.event && parsedMessage.event.type){
       switch(parsedMessage.event.type) {
-        case eventType:
+        case eventType.JoinBoard:
           wsServer.broadcast(message.utf8Data);
           break;
         case eventType.LeaveBoard:
