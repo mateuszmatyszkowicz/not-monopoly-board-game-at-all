@@ -20,9 +20,6 @@ const getUniqueID = () => {
   return s4() + s4() + '-' + s4();
 };
 
-
-
-
 wsServer.on('request', function(request) {
     var userID = getUniqueID();
     console.log((new Date()) + ' Recieved a new connection from origin ' + request.origin + '.');
