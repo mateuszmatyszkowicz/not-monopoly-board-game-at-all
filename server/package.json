@@ -1,4 +1,7 @@
 {
+  "scripts": {
+    "start": "nodemon -w ./src ./src/server.js"
+  },
   "dependencies": {
     "http": "^0.0.1-security",
     "websocket": "^1.0.32"
