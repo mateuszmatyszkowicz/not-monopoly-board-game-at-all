@@ -1,6 +1,6 @@
-enum EventType {
+export enum EventType {
     JoinBoard = 'JoinBoard',
-    LeaveBoard = 'LeaveBoard'
+    LeaveBoard = 'LeaveBoard',
+    PlayCard = 'PlayCard',
+    TakeCards = 'TakeCards'
 }
-
-export default EventType
