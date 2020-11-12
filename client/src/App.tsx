@@ -1,10 +1,8 @@
 import React, { useEffect } from "react";
-import logo from "./logo.svg";
 import "./App.css";
 import { w3cwebsocket as W3CWebSocket } from "websocket";
 import { eventType } from "./eventTypes";
-import './assets/tailwind.output.css';
-import { SideMenu } from "./Areas/Menu/side-menu";
+import './Assets/tailwind.output.css';
 import { LandingPage } from "./Areas/Menu/landing-page";
 
 const client = new W3CWebSocket("ws://127.0.0.1:8000");
