@@ -1,4 +1,4 @@
-import { EventType } from './EventTypes';
+import { EventType } from '../../../shared/src/Domain/Areas/Enums/EventType';
 
 export class EventHandler {
     
